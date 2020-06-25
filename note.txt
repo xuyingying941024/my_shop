@@ -1,5 +1,5 @@
 git操作
-    1、git init
+    1、git init111
     使用git初始化项目
     2、git remote add origin < remote-project-repository-address >
     将项目关联到远程仓库，< remote-project-repository-address >为远程项目仓库的地址
