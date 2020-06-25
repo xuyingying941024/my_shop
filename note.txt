@@ -1,0 +1,7 @@
+安装element-ui
+    npm i element-ui -S
+按需引入
+    npm install babel-plugin-component -D
+安装axios
+    npm install axios
+初始化远程仓库
