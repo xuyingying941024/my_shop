@@ -3,3 +3,21 @@ html,body,#app{
         margin: 0;
         padding: 0;
 }
+.disf {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .disf_sb {
+        justify-content: space-between;
+      }
+      .disf_sa {
+        justify-content: space-around;
+      }
+      .chuizhi {
+        align-items: center;
+      }
+      .juzhong{
+          justify-content: center;
+      }

@@ -7,7 +7,11 @@ import axios from 'axios'
 import 'element-ui/lib/theme-chalk/index.css';
 // 引入字体图标文件
 import './assets/fonts/iconfont.css';
-
+// 设置请求拦截器
+axios.interceptors.request.use(config => {
+  config.headers.Authorization = window.sessionStorage.getItem('token');
+  return config
+});
 // 把axios挂载到vue原型对象的$http属性上
 Vue.prototype.$http = axios;
 // 设置请求根路径

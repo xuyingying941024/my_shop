@@ -1,5 +1,5 @@
 git操作
-    1、git init111
+    1、git install
     使用git初始化项目
     2、git remote add origin < remote-project-repository-address >
     将项目关联到远程仓库，< remote-project-repository-address >为远程项目仓库的地址
@@ -16,3 +16,34 @@ git操作
 安装axios
     npm install axios
 初始化远程仓库
+
+
+axios
+    axios请求拦截器
+        axios.interceptors.request.use(config => {
+            config.headers.Authorization = window.sessionStorage.getItem('token');
+            return config
+        });
+
+
+未知知识点
+    vue params、query传参使用详解
+        jquery可以通过name或path来引入路由
+        params只能通过name来引入路由，path会undefined
+        获取值有些不相同：
+        params：this.$route.params.name;
+        query:this.$route.query.name;
+    作用域插槽
+        <template slot-scope='scope'>
+            {{scope.row}}   row表示本行所有数据
+        </template>
+
+
+问题：
+为左侧菜单列表加动态index时 值不能为number，在获取的ID后拼接空字符串，让其变成string；
+获取二级菜单是遍历时用的item，改为item.children
+设置sessionStorage缓存用setItem，获取sessionStorage用getItem
+
+接口请求时params写法与router传参区别
+    this.$http.get('/users', { params: this.queryParams })
+    this.$router.push({name:'B',query:{name:'xy',age:22}});
